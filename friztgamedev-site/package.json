@@ -1,0 +1,7 @@
+{
+  "name": "friztgamedev-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Сайт студии браузерных игр FriztGameDev",
+  "engines": { "node": ">=18" }
+}

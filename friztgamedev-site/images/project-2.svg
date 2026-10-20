@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 425" width="680" height="425">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0ea5e9"/><stop offset="1" stop-color="#22c55e"/></linearGradient></defs>
+<rect width="680" height="425" fill="url(#g)"/><rect x="60" y="40" width="300" height="200" rx="14" fill="#ffffff" opacity=".9"/><text x="210" y="82" font-size="26" font-weight="700" text-anchor="middle" fill="#111" font-family="Impact, Arial">TOP TEXT</text><circle cx="210" cy="150" r="42" fill="#ffd166"/><circle cx="195" cy="140" r="5" fill="#111"/><circle cx="225" cy="140" r="5" fill="#111"/><path d="M190 165q20 18 40 0" stroke="#111" stroke-width="5" fill="none" stroke-linecap="round"/><text x="210" y="228" font-size="26" font-weight="700" text-anchor="middle" fill="#111" font-family="Impact, Arial">BOTTOM TEXT</text>
+<text x="40" y="340" font-size="44" font-weight="700" fill="#fff" font-family="Arial, sans-serif">Meme Generator</text>
+<text x="40" y="378" font-size="20" fill="#ffffffcc" font-family="Arial, sans-serif">Create memes in seconds</text></svg>

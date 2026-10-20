@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FriztGameDev — студия браузерных игр</title>
+  <meta name="description" content="FriztGameDev — студия разработки браузерных игр. Проекты, команда, галерея и заявка на консультацию.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top"><img src="images/logo.svg" alt="" width="32" height="32"><span id="brandName">FriztGameDev</span></a>
+      <nav class="nav" id="nav">
+        <a href="#about" data-i18n="nav_about"></a>
+        <a href="#projects" data-i18n="nav_projects"></a>
+        <a href="#team" data-i18n="nav_team"></a>
+        <a href="#gallery" data-i18n="nav_gallery"></a>
+        <a href="#contact" data-i18n="nav_contact"></a>
+      </nav>
+      <div class="lang" id="lang">
+        <button data-lang="ru">RU</button>
+        <button data-lang="ky">KY</button>
+        <button data-lang="en">EN</button>
+      </div>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <h1 data-i18n="hero_title"></h1>
+        <p class="hero__sub" data-i18n="hero_sub"></p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#projects" data-i18n="hero_cta"></a>
+          <a class="btn btn--ghost" href="#contact" data-i18n="hero_cta2"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about">
+        <div>
+          <h2 data-i18n="about_title"></h2>
+          <p data-i18n="about_text"></p>
+          <ul class="points" id="aboutPoints"></ul>
+        </div>
+        <div class="stats">
+          <div class="stat"><b id="statGames">3</b><span data-i18n="stat_games"></span></div>
+          <div class="stat"><b>3</b><span data-i18n="stat_langs"></span></div>
+          <div class="stat"><b id="statSince">2025</b><span data-i18n="stat_since"></span></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="ceo" id="ceo"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <h2 data-i18n="projects_title"></h2>
+        <div class="grid grid--3" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="team">
+      <div class="container">
+        <h2 data-i18n="team_title"></h2>
+        <div class="grid grid--3" id="teamGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="gallery">
+      <div class="container">
+        <h2 data-i18n="gallery_title"></h2>
+        <div class="gallery" id="galleryGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact">
+        <div>
+          <h2 data-i18n="contact_title"></h2>
+          <p data-i18n="contact_sub"></p>
+          <ul class="links" id="contactLinks"></ul>
+        </div>
+        <form class="form" id="leadForm" novalidate>
+          <label><span data-i18n="f_name"></span>
+            <input name="name" type="text" maxlength="80" required autocomplete="name">
+          </label>
+          <label><span data-i18n="f_contact"></span>
+            <input name="contact" type="text" maxlength="120" required autocomplete="off">
+          </label>
+          <label><span data-i18n="f_topic"></span>
+            <select name="topic" id="topicSelect"></select>
+          </label>
+          <label><span data-i18n="f_message"></span>
+            <textarea name="message" rows="5" maxlength="1500" required></textarea>
+          </label>
+          <!-- Ловушка для спам-ботов: человек это поле не видит -->
+          <input class="hp" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <label class="check"><input name="consent" type="checkbox" required><span data-i18n="f_consent"></span></label>
+          <button class="btn btn--primary" type="submit" id="submitBtn" data-i18n="f_send"></button>
+          <p class="status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© <span id="year"></span> <span id="footBrand">FriztGameDev</span>. <span data-i18n="footer"></span></span>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden><img id="lightboxImg" alt=""></div>
+
+  <script src="config.js"></script>
+  <script src="i18n.js"></script>
+  <script src="data/content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
